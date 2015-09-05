@@ -1,15 +1,16 @@
 import java.util.Scanner;
 import java.io.*;
 
-class FirstReverse {  
-  String firstReverse(String str) { 
+class FirstFactorial {  
+  int firstFactorial(int num) { 
   
     // code goes here   
-    String reversedString = "";
-	for (int i = str.length() - 1; i >= 0; i--) {
-		reversedString += str.charAt(i);
+	int factorial = 1;
+	while(num > 0){
+		factorial *= num;
+		num--;
 	}
-    return reversedString;    
+    return factorial;    
   } 
   /* Note: In Java the return type of a function and the 
        parameter types being passed are defined, so this return 
@@ -19,8 +20,8 @@ class FirstReverse {
   public static void main (String[] args) {  
     // keep this function call here     
     Scanner s = new Scanner(System.in);
-    FirstReverse c = new FirstReverse();
-    System.out.print(c.firstReverse(s.nextLine())); 
+    FirstFactorial c = new FirstFactorial();
+    System.out.print(c.firstFactorial(s.nextInt())); 
     s.close();
   }   
   
