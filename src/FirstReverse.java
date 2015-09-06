@@ -26,12 +26,3 @@ class FirstReverse {
   }   
   
 }
-
-
-
-
-
-
-
-
-  
