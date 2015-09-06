@@ -11,12 +11,11 @@ class LetterCapitalize {
        You are free to modify the return type. */
     String capitalizedString = "";
     for (int i = 0; i < str.length(); i++) {
-      char character = str.charAt(i); 
-      int code = (int) character;
+      int code = (int) str.charAt(i);
       if ((i == 0 || str.charAt(i - 1) == ' ') && (code >= 97 && code <= 122)) {
         capitalizedString += (char) (code - 32);
       } else {
-        capitalizedString += character;
+        capitalizedString += (char) code;
       }
     }
     return capitalizedString;    
